@@ -55,9 +55,9 @@ in at least 4 of 5 tries.
 
 ---
 
-## 4. Something about your chunks
+## 4. Each answer should be returned within 10 seconds
 
-<!-- YOU WRITE THIS ONE.
+ It is important to have a good response time but also allow myself self some grace because this is my first time doing something like this. 
 
      How would you know if your chunks were the right size? Name something
      countable or observable.
@@ -74,10 +74,11 @@ in at least 4 of 5 tries.
 **Why this target:**
 
 
-
 ---
 
-## 5. Your choice
+## 5. If two sources disagree when answering both should be present so the user can make their own opinion
+
+It is important to reduce bias and allow the user to ultimately come up with their own answer at the end of the day. 
 
 <!-- YOU WRITE THIS ONE TOO.
 
