@@ -203,14 +203,27 @@ Write down specifics before the meeting. 'It's not working' is hard to act on; '
 
      Milestone 1. -->
 
+## Milestone 1: Run Log — Before
+
 | Criterion | Target | Run 1 | Run 2 | Run 3 | Verdict |
 |---|---|---|---|---|---|
-| 1. Retrieved chunk contains the answer | 4 of 5 |  |  |  |  |
-| 2. Every answer names a source | 5 of 5 |  |  |  |  |
-| 3. Gate stops out-of-corpus questions | 4 of 5 |  |  |  |  |
-| 4. | | | | | |
-| 5. | | | | | |
+| 1. Retrieved chunk contains the answer | 4 of 5 | 0/5 | 0/5 | 0/5 | MISSED |
+| 2. Every answer names a source | 5 of 5 | 0/5 | 0/5 | 0/5 | MISSED |
+| 3. Gate stops out-of-corpus questions | 4 of 5 | 5/5 | 5/5 | 5/5 | MET |
 
+### Criterion 1 — Evidence
+
+**Produced by:** `run_eval.py::main`  
+**Retrieval:** `store.py::search` using chunks from `chunker.py::split_documents`
+
+Example output from Run 1:
+
+```text
+Is a bike worth it for a 20-minute walking commute?
+- Best distance: 0.6972 (refused by the gate)
+- Sources retrieved: course_econ_101_workload.txt, dining_the_ridgeway_cafe.txt, dining_the_ridgeway_cafe_followup.txt, health_center.txt, transit_walking.txt
+
+I don't have enough information about that.
 <!-- Underneath, paste the REAL output for each criterion from one of your
      runs — the actual text your system produced, not a description of it.
      Name the file and function that produced it. -->
@@ -301,3 +314,4 @@ Write down specifics before the meeting. 'It's not working' is hard to act on; '
      differently, and why?
 
      Milestone 5. -->
+
