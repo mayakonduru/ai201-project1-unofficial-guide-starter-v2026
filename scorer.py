@@ -1,4 +1,4 @@
-def judge(question: str, expects: str, answer: str, results) --> bool:
+def judge(question: str, expects: str, answer: str, results) -> bool:
 
   if not expects:
     return False
